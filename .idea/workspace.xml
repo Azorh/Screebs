@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07ba08ea-755b-4826-a65c-751f71417af8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Screebs Directory.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Screebs Directory.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/role.upgrader.js" beforeDir="false" afterPath="$PROJECT_DIR$/role.upgrader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/role.builder.js" beforeDir="false" afterPath="$PROJECT_DIR$/role.builder.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +16,13 @@
   <component name="EmbeddingIndexingInfo">
     <option name="cachedIndexableFilesCount" value="16" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1776625931180</updated>
       <workItem from="1776625933811" duration="1051000" />
-      <workItem from="1776735957736" duration="6058000" />
+      <workItem from="1776735957736" duration="19340000" />
     </task>
     <servers />
   </component>
