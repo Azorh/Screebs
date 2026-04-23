@@ -5,9 +5,8 @@ var roleHarvester = {
 	    if(creep.store.getFreeCapacity() > 0) {
             var source = creep.pos.findClosestByPath(FIND_SOURCES);
             if (source && creep.harvest(source) == ERR_NOT_IN_RANGE) {
-                creep.moveTo(source, {
-                    visualizePathStyle: {stroke: '#ffaa00'},
-                    ignoreCreeps: true
+                var test = creep.moveTo(source, {
+                    visualizePathStyle: {stroke: '#ffaa00'}
                 });
             }
         }
@@ -23,8 +22,7 @@ var roleHarvester = {
             if(targets.length > 0) {
                 if(creep.transfer(targets[0], RESOURCE_ENERGY) == ERR_NOT_IN_RANGE) {
                     creep.moveTo(targets[0], {
-                        visualizePathStyle: {stroke: '#4ed974'},
-                        ignoreCreeps: true
+                        visualizePathStyle: {stroke: '#4ed974'}
                     });
                 }
             }

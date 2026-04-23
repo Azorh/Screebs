@@ -9,7 +9,7 @@ var spawnRepairer = {
 		var newName = 'Repairer' + Game.time;
 		console.log('Spawning new Repairer: ' + newName);
 
-		spawn.spawnCreep([WORK, CARRY, MOVE], newName, {
+		spawn.spawnCreep([WORK, WORK, CARRY, MOVE], newName, {
 			memory: { role: 'repairer' }
 		});
 			

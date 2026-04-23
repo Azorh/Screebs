@@ -9,7 +9,7 @@ var spawnHarvester = {
 		var newName = 'Harvester' + Game.time;
 		console.log('Spawning new harvester: ' + newName);
 
-		spawn.spawnCreep([WORK, CARRY, MOVE], newName, {
+		spawn.spawnCreep([WORK, WORK, CARRY, MOVE], newName, {
 			memory: { role: 'harvester' }
 		});
 

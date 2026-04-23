@@ -9,8 +9,8 @@ var spawnBuilder = {
 		var newName = 'Builder' + Game.time;
 		console.log('Spawning new builder: ' + newName);
 
-		spawn.spawnCreep([WORK, CARRY, MOVE], newName, {
-			memory: { role: 'builder' }
+		spawn.spawnCreep([WORK, WORK, CARRY, MOVE], newName, {
+			memory: { role: 'builder', building: false, targetIndex: 0 }
 		});
 			
 		spawnHelper.drawSpawningVisual(spawn);

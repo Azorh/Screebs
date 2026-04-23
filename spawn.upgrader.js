@@ -9,7 +9,7 @@ var spawnUpgrader = {
 		var newName = 'Upgrader' + Game.time;
 		console.log('Spawning new upgrader: ' + newName);
 
-		spawn.spawnCreep([WORK, CARRY, MOVE], newName, {
+		spawn.spawnCreep([WORK, WORK, CARRY, MOVE], newName, {
 			memory: { role: 'upgrader' }
 		});
 

@@ -17,6 +17,19 @@ module.exports.loop = function () {
             console.log('Clearing non-existing creep memory:', name);
         }
     }
+    
+    // Logic for spawning Spawn Extensions
+    // Currently based off of hardcoded spawn name "Spawn1" may require modification for use in production
+    var initialSpawn = Game.spawns['Spawn1']
+    if ((initialSpawn.room.find(FIND_MY_CONSTRUCTION_SITES, { filter: {structureType: STRUCTURE_EXTENSION}}).length + initialSpawn.room.find(FIND_MY_STRUCTURES, { filter:  {structureType: STRUCTURE_EXTENSION}}).length) < 5) {
+		let spawn = initialSpawn.room.find(FIND_MY_SPAWNS)[0].pos
+		const constrarea = initialSpawn.room.lookAtArea(spawn.y-3, spawn.x-3, spawn.y+3, spawn.x+3)
+		for( let x = -2 ; x <= 2 ; x+=4)
+			for( let y = -2 ; y <= 2 ; y+=4)
+				if(constrarea[spawn.y][spawn.x-2][0].terrain !== 'wall' && constrarea[spawn.y][spawn.x-2][0].type !== 'structure') {
+					initialSpawn.room.createConstructionSite(spawn.x + x, spawn.y + y, STRUCTURE_EXTENSION)
+				}
+	}
 
 	var creepsByRole = _.groupBy(Game.creeps, (creep) => creep.memory.role);
 

@@ -7,7 +7,6 @@ var roleBigHarvester = {
             if (source && creep.harvest(source) == ERR_NOT_IN_RANGE) {
                 creep.moveTo(source, {
                     visualizePathStyle: {stroke: '#ffaa00'},
-                    ignoreCreeps: true
                 });
             }
         }
@@ -24,7 +23,6 @@ var roleBigHarvester = {
                 if(creep.transfer(targets[0], RESOURCE_ENERGY) == ERR_NOT_IN_RANGE) {
                     creep.moveTo(targets[0], {
                         visualizePathStyle: {stroke: '#2c9649'},
-                        ignoreCreeps: true
                     });
                 }
             }
